@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>selleradd</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-card *ngFor="let seller of sellers">
+      <ion-card-header>
+        <ion-row class="ion-align-items-center">
+          <ion-col>{{ seller.username }}</ion-col>
+          <ion-col class="ion-justify-content-end">
+            <ion-button color="success" (click)="acceptSeller(seller.username)" shape="round" icon-only>
+              <ion-icon name="checkmark"></ion-icon>
+            </ion-button>
+            <ion-button color="danger" (click)="rejectSeller(seller.username)" shape="round" icon-only style="margin-left: 8px;"> <!-- Ajoutez une marge à gauche -->
+              <ion-icon name="close"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-card-header>
+    </ion-card>
+  </ion-list>
+</ion-content>
+

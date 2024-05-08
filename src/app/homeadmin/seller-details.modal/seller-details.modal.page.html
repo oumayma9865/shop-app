@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Seller Details</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Name:</ion-label>
+      <ion-text>{{ seller.username }}</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email:</ion-label>
+      <ion-text>{{ seller.email }}</ion-text>
+    </ion-item>
+    <!-- Add other details as needed -->
+  </ion-list>
+</ion-content>

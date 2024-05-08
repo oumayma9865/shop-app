@@ -1,0 +1,22 @@
+ion-card-content form {
+    display: flex;
+    flex-direction: column;
+    width: 100;
+    margin-top: -50px;
+  }
+  ion-toolbar{
+    height: 50px;
+  }
+  
+  
+ 
+  
+ 
+  .custom-card {
+    width: 100%; /* Largeur personnalisée */
+    max-width: 600px; /* Largeur maximale pour éviter qu'elle ne devienne trop large */
+    margin: auto; /* Centrer la carte horizontalement */
+    height: 100%; /* Hauteur automatique en fonction du contenu */
+  }
+  
+  

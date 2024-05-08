@@ -1,0 +1,29 @@
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+   Sellers List
+   </ion-title>
+   <ion-buttons slot="start"> 
+    <ion-menu-button menu="first"></ion-menu-button> </ion-buttons>  
+    <ion-buttons slot="end" (click)="onNavigate('/selleradd')">
+      <ion-icon name="add-circle"  style="font-size: 24px; color: red;"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+  </ion-header>
+ 
+ 
+<ion-content class="card-content">
+  <ion-card *ngFor="let seller of loggedInSellers" (click)="openSellerDetailsModal(seller)">
+    <ion-card-content class="seller-info">
+      <ion-label>{{ seller.username }}</ion-label>
+      <ion-button fill="clear" class="delete-button" slot="end" (click)="deleteSeller(seller)">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <app-tab></app-tab>
+</ion-footer>

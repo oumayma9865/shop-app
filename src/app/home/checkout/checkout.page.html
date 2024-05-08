@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Checkout</ion-title>
+  </ion-toolbar>
+</ion-header>
+<br><br>
+<ion-content class="ion-padding">
+  <ion-card class="custom-card">
+    <ion-card-header>
+      <ion-card-title>Payment Details</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <br><br>
+      <ion-item>
+        <ion-label></ion-label>
+        <ion-icon name="person" slot="start"></ion-icon>
+        <ion-input type="text" placeholder="Cardholder's Name" ></ion-input>
+      </ion-item>
+      <br><br>
+      <ion-item><ion-label ></ion-label>
+        <ion-icon name="card" slot="start"></ion-icon>
+        <ion-input type="text" placeholder="Card Number"></ion-input>
+      </ion-item>
+      
+      <br><br>
+      <ion-item>
+        <ion-label ></ion-label>
+        <ion-icon name="calendar" slot="start"></ion-icon>
+        <ion-input type="text" placeholder="Expiration Date" ></ion-input>
+      </ion-item>
+     <br><br>
+      <ion-item>
+        <ion-label ></ion-label>
+        <ion-icon name="key" slot="start"></ion-icon>
+        <ion-input type="text" placeholder="CVV" ></ion-input>
+      </ion-item>
+      <br><br>
+      <ion-button expand="full" color="primary" (click)="onSubmit()">Pay Now</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+
+ 
+</ion-content>

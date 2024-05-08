@@ -1,0 +1,28 @@
+.card-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .seller-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
+    margin-bottom: 20px;
+    height: 60px;
+    width: 90%;
+  }
+  
+  .seller-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .delete-button {
+    flex-shrink: 0; /* Empêche le bouton de réduire en taille */
+  }
+  
